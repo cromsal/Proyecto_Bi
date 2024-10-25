@@ -1,0 +1,111 @@
+/* Estilos generales para resetear márgenes, rellenos y cajas */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos generales del cuerpo del documento */
+body {
+    font-family: Arial, sans-serif; /* Fuente para el texto del cuerpo */
+    background-color: #ffffff; /* Color de fondo */
+    color: #333333; /* Color del texto */
+    line-height: 1.6; /* Altura de línea */
+}
+
+/* Contenedor principal con márgenes automáticos */
+.container {
+    width: 90%; /* Ancho máximo del contenedor */
+    max-width: 1200px; /* Ancho máximo en píxeles */
+    margin: 0 auto; /* Margen automático para centrar */
+    padding: 20px; /* Relleno interno */
+}
+
+/* Estilos para el encabezado */
+header {
+    background-color: #F2C811; /* Color de fondo del encabezado */
+    padding: 20px 0; /* Relleno interno superior e inferior */
+    text-align: center; /* Alineación del texto */
+}
+
+/* Estilos para el título principal en el encabezado */
+header h1 {
+    color: #333333; /* Color del texto */
+    font-size: 24px; /* Tamaño de la fuente */
+}
+
+/* Estilos para la lista de navegación */
+nav ul {
+    list-style-type: none; /* Elimina los estilos de la lista */
+    padding: 0; /* Elimina el relleno */
+}
+
+/* Estilos para los elementos de la lista de navegación */
+nav ul li {
+    display: inline; /* Visualización en línea */
+    margin-right: 20px; /* Margen derecho */
+}
+
+/* Estilos para los enlaces de navegación */
+nav ul li a {
+    color: #333333; /* Color del texto */
+    text-decoration: none; /* Elimina el subrayado */
+}
+
+/* Estilos para los enlaces de navegación al pasar el mouse */
+nav ul li a:hover {
+    text-decoration: underline; /* Subrayado al pasar el mouse */
+}
+
+/* Estilos para los párrafos al pasar el mouse */
+section p:hover {
+    transform: scale(1.1); /* Escalado al pasar el mouse */
+    transition: 0.3s; /* Transición suave */
+}
+
+/* Estilos para el contenido principal */
+main {
+    padding: 40px 0; /* Relleno interno superior e inferior */
+}
+
+/* Estilos para las secciones */
+section {
+    padding: 20px 0; /* Relleno interno superior e inferior */
+}
+
+/* Estilos para las imágenes */
+#img1 {
+    width: 50%; /* Tamaño de la imagen: 50% del ancho de la ventana */
+    height: auto; /* Mantener la proporción de aspecto */  
+}
+
+/* Estilos para las imágenes al pasar el mouse */
+img:hover {
+    transform: scale(1.1); /* Escalado al pasar el mouse */
+    transition: 0.3s; /* Transición suave */
+}
+
+/* Estilos para los títulos de sección */
+section h2 {
+    font-size: 28px; /* Tamaño de la fuente */
+    margin-bottom: 10px; /* Margen inferior */
+}
+
+/* Estilos para los párrafos y listas de sección */
+section p, section ul {
+    font-size: 16px; /* Tamaño de la fuente */
+    margin-bottom: 20px; /* Margen inferior */
+}
+
+/* Estilos para las listas de sección */
+section ul {
+    list-style: disc inside; /* Estilo de lista con viñetas dentro */
+}
+
+/* Estilos para el pie de página */
+footer {
+    background-color: #333333; /* Color de fondo */
+    color: #ffffff; /* Color del texto */
+    padding: 20px 0; /* Relleno interno superior e inferior */
+    text-align: center; /* Alineación centrada del texto */
+}

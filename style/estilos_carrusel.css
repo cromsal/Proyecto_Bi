@@ -1,0 +1,88 @@
+/* Estilos para el contenedor principal del carrusel */
+#carousel {
+    position: relative; /* Posición relativa */
+    width: 100%; /* Ancho completo */
+    max-width: 600px; /* Ancho máximo */
+    margin: 20px auto; /* Márgenes automáticos */
+    overflow: hidden; /* Ocultar el desbordamiento */
+    border: 2px solid #ccc; /* Borde sólido */
+}
+
+/* Estilos para las diapositivas del carrusel */
+.carousel-slide {
+    display: flex; /* Visualización en flexbox */
+    transition: transform 0.5s ease-in-out; /* Transición suave */
+}
+
+/* Estilos para las imágenes del carrusel */
+.carousel-slide img {
+    width: 100%; /* Ancho completo */
+    height: auto; /* Altura automática */
+    max-height: 400px; /* Altura máxima */
+    object-fit: cover; /* Ajuste de objeto para cubrir el contenedor */
+    cursor: pointer; /* Cursor de puntero */
+    flex-shrink: 0; /* No se encoge dentro del carrusel */
+}
+
+/* Estilos para las imágenes individuales */
+#c_img1{
+    width: 100%; /* Ancho completo */
+}
+
+#c_img2{
+    width: 100%; /* Ancho completo */
+    padding: 10%; /* Relleno */
+}
+
+#c_img3{
+    width: 100%; /* Ancho completo */
+    padding: 26%; /* Relleno */
+}
+
+#c_img4{
+    width: 100%; /* Ancho completo */
+}
+
+#c_img5{
+    width: 57%; /* Ancho personalizado */
+}
+
+/* Estilos para el modal */
+.modal {
+    display: none; /* Ocultar por defecto */
+    position: fixed; /* Posición fija */
+    z-index: 1; /* Índice de apilamiento */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto; /* Permitir desplazamiento */
+    background-color: rgba(0, 0, 0, 0.4); /* Fondo semitransparente */
+    justify-content: center; /* Alineación horizontal centrada */
+    align-items: center; /* Alineación vertical centrada */
+}
+
+/* Estilos para el contenido del modal */
+.modal-content {
+    background-color: #fefefe; /* Color de fondo */
+    margin: auto; /* Margen automático */
+    padding: 20px; /* Relleno interno */
+    border: 1px solid #888; /* Borde sólido */
+    width: 80%; /* Ancho del contenido */
+    max-width: 500px; /* Ancho máximo */
+}
+
+/* Estilos para el botón de cierre del modal */
+.close {
+    color: #aaa; /* Color del texto */
+    float: right; /* Flotar a la derecha */
+    font-size: 28px; /* Tamaño de la fuente */
+    font-weight: bold; /* Peso de la fuente */
+}
+
+.close:hover,
+.close:focus {
+    color: black; /* Color del texto al pasar el mouse */
+    text-decoration: none; /* Sin decoración de texto */
+    cursor: pointer; /* Cursor de puntero */
+}

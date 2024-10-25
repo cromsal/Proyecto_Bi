@@ -1,0 +1,33 @@
+/* Estilo para el contenedor del feed RSS */
+#rss-feed {
+    margin-top: 20px !important;
+    padding: 10px !important;
+    border: 1px solid #ccc !important;
+    border-radius: 5px !important;
+    background-color: #f9f9f9 !important;
+    width: 300px; /* Ancho del contenedor del feed */
+    float: left; /* Colocar el contenedor del feed en el lado izquierdo */
+    margin-right: 100px; /* Espacio entre el contenedor del feed y el contenido principal */
+    overflow: scroll;
+    height: 100vh; /* El div se ajusta a la altura mínima de la ventana */
+    padding-bottom: 20px; /* Agregamos un padding inferior para separar del footer */
+}
+
+/* Anular las propiedades de lista predeterminadas dentro del contenedor del feed RSS */
+#rss-feed ul {
+    list-style-type: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+/* Estilo para los enlaces */
+#rss-feed a {
+    text-decoration: none; /* Sin subrayado */
+    color: #333; /* Color de texto */
+    display: block; /* Hace que los enlaces ocupen toda la anchura del contenedor */
+    padding: 5px 0; /* Espaciado interno */
+}
+
+/* Estilo para los enlaces al pasar el ratón sobre ellos */
+#rss-feed a:hover {
+    background-color: #e0e0e0; /* Fondo gris claro al pasar el ratón */
+}
