@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business Intelligence - Proceso ETL</title>
+    <link rel="stylesheet" href="./style/estilos_pbi.css"/>
+    <link rel="stylesheet" href="./style/estilos_rss.css"/>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Business Intelligence</h1><br>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="definicion.html">Definición</a></li>
+                    <li><a href="etl_datawarehouse.html">ETL & Data Warehouse</a></li>
+                    <li><a href="olap.html">OLAP</a></li>
+                    <li><a href="data_mining.html">Data Mining</a></li>
+                    <li><a href="implementacion_casos.html">Implementación y Casos</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <div id="rss-feed">
+              <h3>El País - Economía</h3>
+            </div>
+            <section id="introduccion">
+                <h2>Proceso ETL (Extract, Transform and Load)</h2>
+                <p>El proceso ETL es fundamental en la gestión de datos para Business Intelligence (BI). Aquí te explico cada paso:</p>
+            </section>
+            <section id="extraccion">
+                <h2>Extracción (Extract)</h2>
+                <p>En esta fase, los datos se recopilan desde diversas fuentes, que pueden ser bases de datos, archivos, aplicaciones, sistemas en la nube, redes sociales, entre otros. Los datos extraídos pueden ser estructurados, semi-estructurados o no estructurados.</p>
+            </section>
+            <section id="transformacion">
+                <h2>Transformación (Transform)</h2>
+                <p>Una vez extraídos, los datos pueden necesitar ser limpiados, reestructurados, agregados, enriquecidos o de otra manera transformados para que sean coherentes y útiles para el análisis. Esto implica la aplicación de reglas de negocio, la eliminación de datos duplicados o incorrectos, la conversión de formatos y la normalización de datos.</p>
+            </section>
+            <section id="carga">
+                <h2>Carga (Load)</h2>
+                <p>Finalmente, los datos transformados se cargan en un almacén de datos centralizado, como un Data Warehouse o un Data Lake, donde pueden ser almacenados de forma optimizada para su posterior análisis. La carga puede ser en tiempo real o en lotes, dependiendo de los requisitos del negocio.</p>
+            </section>
+            <img id="img1" src="./Imagenes/imagen_etc.png"/>
+            <section id=" Data Warehouse">
+                <h2>Importancia del Data Warehouse en el contexto de BI</h2>
+                <p>Consolidación de datos: Permite la consolidación de datos de diversas fuentes en un único repositorio centralizado, lo que facilita el análisis y la generación de informes</p>
+                <p>Datos históricos: Almacena datos históricos junto con datos actuales, lo que permite análisis comparativos y tendenciales a lo largo del tiempo.</p>
+                <p>Optimización para el análisis: Los datos en un Data Warehouse están estructurados y optimizados para el análisis, lo que agiliza las consultas y permite la generación de informes rápidos y precisos.</p>
+                <p>Soporte a la toma de decisiones: Proporciona a los usuarios de negocio acceso a información confiable y oportuna, lo que facilita la toma de decisiones basada en datos.</p>
+            </section>
+            <section id="herramientas_tecnologias">
+                <h2>Ejemplos de herramientas y tecnologías</h2>
+                <p>Herramientas de extracción: Apache Nifi, Talend, Informatica PowerCenter</p>
+                <p>Herramientas de transformación: Apache Spark, Apache Flink, Python con Pandas o PySpark, SQL.</p>
+                <p>Herramientas de carga: Apache Sqoop, Apache Kafka, Apache Flume, funcionalidades de carga de plataformas de Data Warehouse.</p>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Business Intelligence - Todos los derechos reservados.</p>
+        </div>
+      </footer>
+      <button id="backToTop" style="position: fixed; bottom: 30px; right: 30px; background-color: #F2C811; color: #333333; padding: 10px; border: none; border-radius: 5px; cursor: pointer;">Volver arriba</button>
+  </body>
+      <script src="./script/script_web.js"></script>
+      <script src="./script/script_rss.js"></script>
+  </html>

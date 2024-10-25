@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business Intelligence - Implementación y Casos</title>
+    <link rel="stylesheet" href="./style/estilos_pbi.css"/>
+    <link rel="stylesheet" href="./style/estilos_rss.css"/>
+    <link rel="stylesheet" href="./style/estilos_carrusel.css"/>
+
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Business Intelligence</h1><br>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="definicion.html">Definición</a></li>
+                    <li><a href="etl_datawarehouse.html">ETL & Data Warehouse</a></li>
+                    <li><a href="olap.html">OLAP</a></li>
+                    <li><a href="data_mining.html">Data Mining</a></li>
+                    <li><a href="implementacion_casos.html">Implementación y Casos</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <div id="rss-feed">
+                <h3>El País - Economía</h3>
+            </div>
+            <section id="introduccion">
+                <h2>Implementación de BI en Organizaciones Reales</h2>
+                <p>En esta sección se analiza la implementación práctica de soluciones de BI en organizaciones reales. Se pueden explorar diferentes enfoques de implementación, herramientas y tecnologías utilizadas, así como los desafíos comunes enfrentados durante el proceso de implementación.</p>
+            </section>
+            <section id="beneficios">
+                <h2>Beneficios del Power BI para Empresas</h2>
+                <ul>
+                    <li>Permite analizar a profundidad los datos provenientes de cientos de orígenes y encontrar patrones, para respaldar la toma de decisiones.</li>
+                    <li>La oportunidad de crear informes innovadores y atractivos, con visualizaciones de datos interactivas.</li>
+                    <li>Diseñar informes mediante las herramientas de creación de temas, formato y diseño.</li>
+                    <li>Crear informes multiplataforma, optimizados para dispositivos móviles.</li>
+                </ul>
+                <p>Con Power BI se podrá reducir el coste agregado, la complejidad y los riesgos de seguridad de varias soluciones, con una única plataforma de análisis que se escala desde los individuos hasta la organización en su conjunto, garantizando confidencialidad, seguridad y elementos de prevención de pérdida de información.</p>
+            </section>
+            <section id="casos">
+                <h2>Casos de Uso</h2>
+                <h3>Power BI para Recursos Humanos</h3>
+                <p>El informe puede crearse con varios paneles, para obtener información sobre el período actual, períodos anteriores o comparaciones. Cuando se quiere obtener un análisis acerca de los períodos de contratación, es posible crear combinaciones con datos, que se expresan a través de gráficos visuales, fáciles de leer. Por ejemplo, juntar los datos de las nuevas contrataciones, con las nuevas contrataciones en el mismo período en un año anterior y con el cambio del % interanual de empleado activos por mes. Al hacer esto es posible obtener un único gráfico en el que se entrelazan todos los datos y llevar a cabo el análisis. Otras posibilidades serían identificar las contrataciones incorrectas, las edades de los trabajadores activos, cuántos trabajadores renunciaron y en qué período, y la proporción entre hombres y mujeres, para saber si se tiene una división uniforme por género.</p>
+
+                <h3>Power BI para Ventas y Marketing</h3>
+                <p>En el caso del departamento de ventas, se pueden entrelazar datos de diferentes departamentos, como por ejemplo, departamento de producción, ventas y atención al cliente. Cada uno de ellos aporta información, a partir de la que se crean factores tales como la cuota actual del mercado, el volumen de producción, las ventas o la satisfacción de los clientes. Al tener informes capaces de unificar estos datos, un gerente puede dar respuesta a determinada situación. Por ejemplo, en qué período del año subieron las ventas y por qué. O, por el contrario, si las ventas o las interacciones bajaron, es posible identificar el momento en que pasó.</p>
+
+                <h3>Power BI para Rentabilidad</h3>
+                <p>Para establecer la rentabilidad, se pueden utilizar datos como responsables, número de productos vendidos, ingresos totales, ingresos brutos, entre otros. A través de Power BI es posible establecer métricas claves, así como analizar las estadísticas de venta de cada responsable. La forma en la que se expresan los datos posibilita la examinación a fondo de las ventas de cada vendedor. Con ello, es posible establecer quién ha superado el objetivo de ventas, quién tiene el margen bruto más bajo o, si alguien tuvo un incremento continuado durante un período determinado. De igual forma permite plantear si alguno ha reducido su ritmo de venta.</p>
+            </section>
+            <div class="container">
+                <div id="carousel">
+                    <h2>Casos prácticos del uso de BI</h2><br>
+                    <div class="carousel-slide">
+                        <img id="c_img1" src="./Imagenes/t1.png" alt="Imagen 1" data-info="info1">
+                        <img id="c_img2" src="./Imagenes/t2.png" alt="Imagen 2" data-info="info2">
+                        <img id="c_img3" src="./Imagenes/t3.png" alt="Imagen 3" data-info="info3">
+                        <img id="c_img4" src="./Imagenes/t4.jpg" alt="Imagen 4" data-info="info4">
+                        <img id="c_img5" src="./Imagenes/t5.png" alt="Imagen 5" data-info="info5">
+                    </div>
+                </div>
+            </div>
+            <!-- Bloque modal que se mantiene oculto hasta clickar en las imágenes -->
+            <div id="modal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <div id="modal-body"></div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Business Intelligence - Todos los derechos reservados.</p>
+        </div>
+    </footer>
+    <button id="backToTop" style="position: fixed; bottom: 30px; right: 30px; background-color: #F2C811; color: #333333; padding: 10px; border: none; border-radius: 5px; cursor: pointer;">Volver arriba</button>
+    <script src="./script/script_web.js"></script>
+    <script src="./script/script_rss.js"></script>
+    <script src="./script/script_carusel.js"></script>
+</body>
+</html>

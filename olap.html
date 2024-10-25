@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business Intelligence - OLAP</title>
+    <link rel="stylesheet" href="./style/estilos_pbi.css"/>
+    <link rel="stylesheet" href="./style/estilos_rss.css"/>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Business Intelligence</h1><br>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="definicion.html">Definición</a></li>
+                    <li><a href="etl_datawarehouse.html">ETL & Data Warehouse</a></li>
+                    <li><a href="olap.html">OLAP</a></li>
+                    <li><a href="data_mining.html">Data Mining</a></li>
+                    <li><a href="implementacion_casos.html">Implementación y Casos</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+        <main>
+            <div class="container">
+                <div id="rss-feed">
+                    <h3>El País - Economía</h3>
+                </div>
+                <section id="olap">
+                    <h2>Online Analytical Processing (OLAP): Exploración Multidimensional de Datos</h2>
+                    <p>Online Analytical Processing (OLAP) es una técnica fundamental en el ámbito de Business Intelligence (BI) que permite el análisis multidimensional de datos. A diferencia de las bases de datos relacionales tradicionales, que están optimizadas para consultas simples y transacciones, OLAP está diseñado para proporcionar una visión más profunda y contextualizada de los datos empresariales.</p>
+                    
+                    <h3>¿Qué es OLAP y cómo difiere de las bases de datos relacionales tradicionales?</h3>
+                    <p>En esencia, OLAP es una tecnología que permite a los usuarios analizar datos desde múltiples perspectivas, como el tiempo, la ubicación, el producto y otros atributos relevantes para la empresa. Organiza los datos en estructuras multidimensionales que reflejan mejor la complejidad de los procesos empresariales.</p>
+                    
+                    <h3>Tipos de OLAP: MOLAP, ROLAP y HOLAP</h3>
+                    <p>Existen varios enfoques para implementar OLAP, cada uno con sus propias características y aplicaciones:</p>
+                    <ul>
+                        <li>
+                            <strong>MOLAP (Multidimensional OLAP):</strong> En MOLAP, los datos se almacenan en un formato multidimensional especializado que permite un acceso rápido y eficiente a través de cubos de datos.
+                        </li>
+                        <li>
+                            <strong>ROLAP (Relational OLAP):</strong> A diferencia de MOLAP, ROLAP utiliza una arquitectura basada en bases de datos relacionales existentes. Los datos se almacenan en tablas relacionales y se utilizan técnicas como vistas materializadas.
+                        </li>
+                        <li>
+                            <strong>HOLAP (Hybrid OLAP):</strong> HOLAP combina elementos de MOLAP y ROLAP, permitiendo a los usuarios aprovechar las ventajas de ambos enfoques. Los datos se almacenan tanto en un almacén multidimensional como en una base de datos relacional.
+                        </li>
+                    </ul>
+                    <h3>Aplicaciones prácticas de OLAP en Business Intelligence</h3>
+                    <p>OLAP se utiliza en una variedad de escenarios empresariales para el análisis y la toma de decisiones, incluyendo:</p>
+                    <ul>
+                        <li>Análisis de ventas y marketing</li>
+                        <li>Planificación y previsión</li>
+                        <li>Gestión de inventario y cadena de suministro</li>
+                    </ul>
+                </section>
+            </div>
+        </main>     
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Business Intelligence - Todos los derechos reservados.</p>
+        </div>
+    </footer>
+    <button id="backToTop" style="position: fixed; bottom: 30px; right: 30px; background-color: #F2C811; color: #333333; padding: 10px; border: none; border-radius: 5px; cursor: pointer;">Volver arriba</button>
+</body>
+
+    <script src="./script/script_web.js"></script>
+    <script src="./script/script_rss.js"></script>
+</html>
